@@ -1,0 +1,313 @@
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: rgb(31, 7, 7);
+  text-decoration: underline;
+   background-color: #e0e0e0;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid rgb(226, 221, 221);
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+}
+
+div.float-right {
+  float: right;
+}
+
+/* Style the icon if needed */
+div.float-left svg {
+  text-decoration: none;
+}
+
+
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+  background-color: #e0e0e0;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ade1dc;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #78c5ba;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color: #f17b7b; /* Màu nền của footer */
+  padding: 10px;
+  text-align: left;
+  margin-top: 10px;
+  display:flex;
+  justify-content:space-between;
+
+   /* Các phần tử con được căn cách nhau một cách đều ra hai phía */
+}
+
+/* Phần dưới cùng của footer */
+footer p:last-child {
+  margin-bottom: 10px;
+}
+
+/* Hiệu ứng màu chữ khi di chuột qua */
+footer p:hover {
+  color: #007bff; /* Màu chữ khi di chuột qua */
+}
+.main-section {
+  margin-bottom: 20px; /* điều chỉnh giá trị này tùy theo khoảng cách mong muốn */
+}
+
+.product-table {
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
+}
+
+
+.product-table tr:nth-child(even) {
+  background-color: #ade1dc;
+}
+
+.product-table tr:nth-child(odd) {
+  background-color: #78c5ba;
+}
+div.inline {
+  display: inline-block;
+  margin-right:83px; /* hoặc giá trị phù hợp */
+}
+.product-section {
+  margin-bottom: 20px; /* điều chỉnh giá trị này tùy theo khoảng cách mong muốn */
+}
+.product-image {
+  display: block;
+  margin: 0 auto;
+}
+/* Thêm class 'float-center' để canh giữa nội dung của float-left và float-right */
+.float-center {
+  display: flex;
+  align-items: center;
+}
+
+.float-left {
+  float: left;
+  color: #020000;
+  font-weight: bold;
+}
+
+.float-rightt {
+  float: right;
+  
+}
+.float-right {
+  float: right;
+    color: #020000;
+  font-weight: bold;
+}
+
+
+
+
+.logo img {
+  max-width: 120px; /* Kích thước tối đa của logo */
+  border-radius: 50%;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: black; /* Màu chữ đen */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.float-rightt {
+  display: flex;
+  align-items: center;
+}
+
+.float-clearr {
+  clear: both;
+}
+.logo {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+/* Add this to your existing CSS file */
+
+.menu li.logo-home {
+  display: flex;
+  align-items: center;
+}
+
+.menu li.logo-home .logo {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.menu li.logo-home a {
+  color: black; /* Màu chữ đen */
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+/* Add this to your existing CSS file */
+
+/* Cập nhật kiểu dáng trong tệp CSS hiện tại của bạn */
+
+.search-container {
+  margin-top: 100px; /* Điều chỉnh margin nếu cần thiết */
+  text-align: center; /* Canh giữa nội dung trong container */
+}
+
+.search {
+  margin: 0;
+  display: inline-block; /* Hiển thị form như một khối để nó không chiếm toàn bộ chiều rộng */
+}
+
+.keyword {
+  width: 110px; /* Điều chỉnh chiều rộng của ô nhập nếu cần thiết */
+}
+/* Thêm các hiệu ứng cho ô nhập */
+.keyword {
+  width: 10px;
+  padding: 5px; /* Điều chỉnh độ dày của viền để tạo hiệu ứng bo tròn */
+  border: 1px solid #ccc; /* Màu đường viền */
+  border-radius: 5px; /* Độ cong để tạo hiệu ứng bo tròn */
+}
+
+/* Thêm các hiệu ứng cho nút tìm kiếm */
+input[type="submit"] {
+  background-color: #4CAF50; /* Màu nền */
+  color: white; /* Màu chữ */
+  border: none; /* Loại bỏ đường viền */
+  padding: 6px 5px; /* Điều chỉnh độ dày và chiều rộng của nút */
+  border-radius: 5px; /* Độ cong để tạo hiệu ứng bo tròn */
+  cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột qua */
+}
+
+/* Thêm biểu tượng lúp cho nút tìm kiếm */
+input[type="submit"]:after {
+  content: "\1F50D"; /* Thêm biểu tượng Unicode của lúp */
+  margin-left: 5px; /* Khoảng cách giữa văn bản và biểu tượng */
+}
+
+/* Thêm màu khi ô nhập được focus */
+.keyword:focus {
+  outline: none; /* Loại bỏ đường viền khi focus */
+  box-shadow: 0 0 10px #4CAF50; /* Đổ bóng khi focus */
+}
+
+.account-menuu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff; /* Màu nền của phần account */
+  border: 1px solid #ccc; /* Viền của phần account */
+  padding: 10px; /* Khoảng cách giữa nội dung và viền */
+  z-index: 2; /* Đảm bảo phần account hiển thị trên icon giỏ hàng */
+}
+
+/* Tùy chỉnh các kiểu khác cho phần account nếu cần */
+/* Thêm vào file CSS hoặc tạo một file mới */
+.product-container {
+  position: relative;
+}
+
+.product-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}

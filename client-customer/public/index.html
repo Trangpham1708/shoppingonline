@@ -1,0 +1,120 @@
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  #root {
+    flex: 1;
+    overflow: auto;
+    position: relative; /* Thêm thuộc tính này để tạo môi trường cho các phần tử con */
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #map-icon {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #map-icon img {
+    width: 55px;
+  }
+
+  /* Thêm kiểu cho Messenger Plugin Chat */
+  #fb-root {
+    position: relative;
+    z-index: 1; /* Đặt z-index cao hơn so với background */
+  }
+
+  #fb-customer-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2; /* Đặt z-index cao hơn so với background */
+  }
+
+  /* Thêm kiểu cho Google Maps */
+  #google-maps {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden; /* Ẩn ban đầu, có thể hiển thị khi cần thiết */
+    z-index: 0; /* Đặt z-index thấp hơn so với background */
+  }
+</style>
+<title>React App</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div class="background-image" style="background-image: url('https://img.thuthuatphanmem.vn/uploads/2018/09/24/anh-background-gif-tuyet-roi_053434816.gif');"></div>
+
+<!-- Add more div elements with different images as needed -->
+
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+<!-- Thêm mã Google Maps -->
+<div id="google-maps">
+  <!-- Đặt iframe của bạn tại đây -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.787805227382!2d106.69744577575256!3d10.827544458247285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528f4a62fce9b%3A0xc99902aa1e26ef02!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBWxINuIExhbmc!5e0!3m2!1svi!2s!4v1701103574675!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<div id="map-icon">
+  <a href="https://www.google.com/maps" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/128/355/355980.png" alt="Map Icon">
+  </a>
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "177907112069085");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml: true,
+      version: 'v18.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+  // Function to open Google Maps when the icon is clicked
+  document.getElementById('map-icon').addEventListener('click', function () {
+    // Bạn có thể không cần function này nếu sử dụng target="_blank" trong thẻ <a>
+    window.open('https://www.google.com/maps', '_blank');
+  });
+</script>
+</body>
+</html>
