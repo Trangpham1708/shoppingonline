@@ -1,0 +1,397 @@
+
+
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+}
+div.float-right {
+  float: right;
+}
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color: #f5f5f5;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #dcfcfc;
+  cursor: pointer;
+}
+
+/* styles.css */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container {
+  margin-right: 20px; /* Thêm khoảng cách giữa logo và menu nếu cần */
+}
+
+.float-leftt {
+  text-align: center;
+}
+
+.float-leftt a {
+  margin-right: 20px; /* Thêm khoảng cách giữa các mục trong menu */
+  font-size: 20px; /* Đặt kích thước chữ */
+  font-weight: bold; /* In đậm */
+  color: #080916; /* Màu chữ đen */
+  text-decoration: none; /* Bỏ gạch chân dưới */
+}
+
+.float-rightt {
+  text-align: right;
+  font-size: 20px;
+}
+
+.account-icon {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 50px; /* Tăng khoảng cách giữa biểu tượng và chữ Logout */
+}
+/* Thêm vào trong file styles.css hoặc nơi bạn đang giữ CSS */
+.table-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+table.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th.datatable, td.datatable {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th.datatable {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr.datatable:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+tr.datatable:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tr.datatable:nth-child(odd) {
+  background-color: #ffeeaa;
+}
+
+
+/* styles.css */
+.body-customer {
+  width: 1150px;
+  height: fit-content;
+  margin: 0px auto;
+}
+.body-admin {
+  width: fit-content;
+  height: fit-content;
+  margin: 0px auto;
+}
+div.inline {
+  display: inline-block;
+}
+figure.caption-right {
+  display: flex;
+  align-items: center;
+}
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+}
+.text-center {
+  text-align: center;
+}
+span.link {
+  cursor: pointer;
+  color: #a67227;
+  text-decoration: underline;
+}
+/* menu.css */
+div.border-bottom {
+  border-bottom: 1px solid black;
+  padding: 10px 0px 10px 0px;
+}
+div.float-left {
+  float: left;
+}
+div.float-right {
+  float: right;
+}
+div.float-clear {
+  clear: both;
+}
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+}
+li.menu {
+  display: inline;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+form.search {
+  margin: 0px;
+}
+input.keyword {
+  width: 110px;
+}
+/* datatable.css */
+.datatable {
+  text-align: center;
+  border-collapse: collapse;
+}
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+/* even rows, except header */
+tr:not(:first-child):nth-child(even).datatable {
+  background-color:#78c5ba;
+}
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ade1dc;
+}
+/* except header */
+tr:not(:first-child):hover.datatable {
+  background-color: #efefed;
+  cursor: pointer;
+}
+
+/* styles.css */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-container {
+  margin-right: 20px; /* Thêm khoảng cách giữa logo và menu nếu cần */
+}
+
+.float-left {
+  text-align: center;
+}
+
+.float-left a {
+  margin-right: 20px; /* Thêm khoảng cách giữa các mục trong menu */
+  font-size: 18px; /* Đặt kích thước chữ */
+  font-weight: bold; /* In đậm */
+  color: black; /* Màu chữ đen */
+  text-decoration: none; /* Bỏ gạch chân dưới */
+}
+
+.float-right {
+  text-align: right;
+}
+
+.account-icon {
+  cursor: pointer;
+  font-size: 22;
+  margin-right: 50px; /* Tăng khoảng cách giữa biểu tượng và chữ Logout */
+}
+/* Thêm vào trong file styles.css hoặc nơi bạn đang giữ CSS */
+.table-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+table.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th.datatable, td.datatable {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th.datatable {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr.datatable:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+tr.datatable:nth-child(even) {
+  background-color: #78c5ba;
+}
+
+tr.datatable:nth-child(odd) {
+  background-color: #d0edf1;
+}
+
+
+/* Thêm styles cho logo nếu cần */
+.logo {
+  max-width: 120px; /* Đặt chiều rộng tối đa cho logo (tùy chọn) */
+  max-height: 120px; /* Đặt chiều cao tối đa cho logo (tùy chọn) */
+}
+/* Thêm vào styles.css hoặc nơi bạn đang giữ CSS */
+
+.category-table {
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 20px;
+}
+
+.category-table td {
+  border: 1px solid #fcf8f8;
+  padding: 6px;
+  text-align: center;
+}
+
+.category-table tr:nth-child(even) {
+  background-color: #ade1dc;
+}
+
+.category-table tr:nth-child(odd) {
+  background-color: #78c5ba;
+}
+.product-table {
+  
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: center;
+  
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #ade1dc;
+}
+
+.product-table tr:nth-child(odd) {
+  background-color: #78c5ba;
+}
+
+
+
+.button-row {
+  
+  background-color: #f0f0f0;
+}
+
+.button-row input {
+  font-family:monospace;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fd9f90;
+  color: white;
+  border: none;
+}
+
+.button-row input:hover {
+  background-color: #efd5d4;
+}
+/* Add this style to your existing styles or create a new CSS file */
+.logo {
+  border-radius: 50%;
+}
